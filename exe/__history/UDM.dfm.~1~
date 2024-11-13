@@ -1,0 +1,19 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 346
+  Width = 567
+  object conexao: TFDConnection
+    LoginPrompt = False
+    Left = 216
+    Top = 112
+  end
+  object Q_cadastro: TFDQuery
+    Connection = conexao
+    Left = 208
+    Top = 192
+  end
+  object ds_cadastro: TDataSource
+    Left = 184
+    Top = 264
+  end
+end

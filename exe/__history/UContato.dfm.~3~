@@ -1,0 +1,189 @@
+object Frm_cadastro: TFrm_cadastro
+  Left = 0
+  Top = 0
+  Caption = 'Contatos'
+  ClientHeight = 535
+  ClientWidth = 883
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 40
+    Top = 64
+    Width = 66
+    Height = 13
+    Caption = 'ID_CONTATO'
+    FocusControl = DBEdit1
+  end
+  object Label2: TLabel
+    Left = 40
+    Top = 104
+    Width = 29
+    Height = 13
+    Caption = 'NOME'
+    FocusControl = DBEdit2
+  end
+  object Label3: TLabel
+    Left = 40
+    Top = 144
+    Width = 50
+    Height = 13
+    Caption = 'TELEFONE'
+    FocusControl = DBEdit3
+  end
+  object Label4: TLabel
+    Left = 245
+    Top = 144
+    Width = 44
+    Height = 13
+    Caption = 'CELULAR'
+    FocusControl = DBEdit4
+  end
+  object Label5: TLabel
+    Left = 40
+    Top = 224
+    Width = 35
+    Height = 13
+    Caption = 'EMAIL'
+    FocusControl = DBEdit5
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBEdit1: TDBEdit
+    Left = 40
+    Top = 80
+    Width = 134
+    Height = 21
+    CharCase = ecUpperCase
+    DataField = 'ID_CONTATO'
+    DataSource = DM.ds_cadastro
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 40
+    Top = 117
+    Width = 344
+    Height = 21
+    CharCase = ecUpperCase
+    DataField = 'NOME'
+    DataSource = DM.ds_cadastro
+    TabOrder = 1
+  end
+  object DBEdit3: TDBEdit
+    Left = 40
+    Top = 163
+    Width = 139
+    Height = 21
+    CharCase = ecUpperCase
+    DataField = 'TELEFONE'
+    DataSource = DM.ds_cadastro
+    TabOrder = 2
+  end
+  object DBEdit4: TDBEdit
+    Left = 185
+    Top = 163
+    Width = 199
+    Height = 21
+    CharCase = ecUpperCase
+    DataField = 'CELULAR'
+    DataSource = DM.ds_cadastro
+    TabOrder = 3
+  end
+  object DBEdit5: TDBEdit
+    Left = 40
+    Top = 243
+    Width = 344
+    Height = 21
+    CharCase = ecUpperCase
+    DataField = 'EMAIL'
+    DataSource = DM.ds_cadastro
+    TabOrder = 4
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 883
+    Height = 58
+    Align = alTop
+    Color = clGradientInactiveCaption
+    ParentBackground = False
+    TabOrder = 5
+    object Button1: TButton
+      Left = 31
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = '&Novo'
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 151
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = '&Alterar'
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 271
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = '&Deletar'
+      TabOrder = 2
+    end
+    object Button4: TButton
+      Left = 391
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = 'Gravar'
+      TabOrder = 3
+    end
+    object Button5: TButton
+      Left = 511
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = '&Cancelar'
+      TabOrder = 4
+    end
+    object Button6: TButton
+      Left = 631
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = '&Atualizar'
+      TabOrder = 5
+    end
+    object Button7: TButton
+      Left = 751
+      Top = 0
+      Width = 114
+      Height = 58
+      Caption = '&Fechar'
+      TabOrder = 6
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 480
+    Width = 883
+    Height = 55
+    Align = alBottom
+    Color = clGradientActiveCaption
+    ParentBackground = False
+    TabOrder = 6
+  end
+end
